@@ -4,7 +4,7 @@ const ServiceTypes = {
   CLUSTER: 'Cluster',
   HEALTH: 'Health'
 };
-
+//dgfg
 const Actions = {
   CHECK_IN: 'CheckIn',
   GET_STATUS: 'GetStatus',
