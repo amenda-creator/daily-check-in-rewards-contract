@@ -1,0 +1,6 @@
+{
+  "appName": "daily-check-in-rewards",
+  "dayLengthMs": 86400000,
+  "pointsPerCheckIn": 1,
+  "dbFile": "checkin.db"
+}

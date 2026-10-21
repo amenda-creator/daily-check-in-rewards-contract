@@ -1,0 +1,11 @@
+{
+  "name": "daily-check-in-rewards-tests",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node run-tests.js"
+  },
+  "dependencies": {
+    "hotpocket-js-client": "0.5.5"
+  }
+}

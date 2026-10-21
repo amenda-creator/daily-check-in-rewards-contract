@@ -1,0 +1,36 @@
+{
+  "name": "daily-check-in-rewards",
+  "version": "1.0.0",
+  "description": "Evernode smart contract: one check-in per day, one reward point per check-in",
+  "main": "src/startup.js",
+  "license": "MIT",
+  "author": "Everpower Studio",
+  "keywords": ["evernode", "hotpocket", "check-in", "rewards"],
+  "repository": {
+    "type": "git",
+    "url": "https://example.com/daily-check-in-rewards.git"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "dev": "nodemon src/startup.js",
+    "start": "node src/startup.js",
+    "build": "ncc build src/startup.js -o dist",
+    "buildLinux": "ncc build src/startup.js -o dist && cp hp.cfg.override dist/ && cp .env dist/ && cp src/settings.json dist/",
+    "test": "cd src/Test && npm test"
+  },
+  "dependencies": {
+    "hotpocket-nodejs-contract": "0.7.4",
+    "sqlite3": "5.1.6",
+    "uuid": "9.0.0",
+    "dotenv": "16.3.1",
+    "tweetnacl": "1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "3.0.1",
+    "@vercel/ncc": "0.38.1",
+    "@types/node": "20.0.0",
+    "@types/uuid": "9.0.0"
+  }
+}

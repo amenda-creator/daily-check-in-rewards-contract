@@ -1,0 +1,19 @@
+{
+  "name": "daily-check-in-rewards-upgrade-client",
+  "version": "1.0.0",
+  "description": "CLI tool to upgrade the daily-check-in-rewards contract",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "build": "ncc build index.js -o dist"
+  },
+  "dependencies": {
+    "hotpocket-js-client": "0.5.5",
+    "bson": "4.7.2",
+    "tweetnacl": "1.0.3"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "0.38.1"
+  }
+}
